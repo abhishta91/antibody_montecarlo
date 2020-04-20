@@ -161,7 +161,7 @@ if __name__ == "__main__":
     Right Boundary: 0.027000
     Median: 0.020000
 
-
+## Example plot for default simulation parameters.
 
 ![png](output_7_2.png)
 
