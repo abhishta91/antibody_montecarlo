@@ -12,16 +12,16 @@ from scipy import stats
 from tqdm import tqdm
 ```
 
-## $draws$ function takes simulation parameters as input and returns number of occurances for the cutoff value.
+## `draws` function takes simulation parameters as input and returns number of occurances for the cutoff value.
 
 ### Simulation parameters
 
-$runs$ : number of montecarlo draws.  
-$N$ : total population.  
-$p$ : probability that a person has antibodies.  
-$ts$ : probability that if a person realy has antibodies then the test gives a positive result.  
-$tr$ : probability that if the person has no antibodies then the test gives a positive result.  
-$rv$ : number of occurences of cutoff value in resulting distribution.  
+*runs* : number of montecarlo draws.  
+*N* : total population.  
+*p* : probability that a person has antibodies.  
+*ts* : probability that if a person realy has antibodies then the test gives a positive result.  
+*tr* : probability that if the person has no antibodies then the test gives a positive result.  
+*rv* : number of occurences of cutoff value in resulting distribution.  
 
 
 ```python
@@ -66,7 +66,7 @@ def draws(runs,N,p,ts,tr,cutoff):
     return rv
 ```
 
-## $plot\_boundary$ function plots the number of occurances of cutoff value for each base rate and calculates upper and lower boundaries on the basis of values provided.
+## `plot\_boundary` function plots the number of occurances of cutoff value for each base rate and calculates upper and lower boundaries on the basis of values provided.
 
 
 ```python
@@ -114,7 +114,19 @@ def plot_boundary(runs,ps,N,hits,left,right,cutoff):
     return boundry_left,boundry_right,med
 ```
 
-## $main$ fuction accepts all parameter values and can be used to execute the analysis.
+## `main` fuction accepts all parameter values and can be used to execute the analysis.  
+**You may change the simulation parameters here**  
+*runs\_pass* : number of montecarlo draws.  
+*N\_pass* : total population.  
+*p\_pass* : probability that a person has antibodies.  
+*ts\_pass* : probability that if a person realy has antibodies then the test gives a positive result.  
+*tr\_pass* : probability that if the person has no antibodies then the test gives a positive result.  
+*cutoff\_pass* : number of people who are expected to have antibodies based on base rate.  
+*p\_pass* : staring base rate.  
+*p\_step* : change in base rate for the next simulation.  
+*p\_limit* : ending base rate.  
+*left\_pass* : left boundary setting.  
+*right\_pass* : right boundary setting.  
 
 
 ```python
