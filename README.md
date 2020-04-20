@@ -114,7 +114,7 @@ def plot_boundary(runs,ps,N,hits,left,right,cutoff):
     return boundry_left,boundry_right,med
 ```
 
-## `main` fuction accepts all parameter values and can be used to execute the analysis.  
+## `main` function accepts all parameter values and can be used to execute the analysis.  
 **You may change the simulation parameters here**  
 *runs\_pass* : number of montecarlo draws.  
 *N\_pass* : total population.  
