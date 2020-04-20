@@ -66,7 +66,7 @@ def draws(runs,N,p,ts,tr,cutoff):
     return rv
 ```
 
-## `plot\_boundary` function plots the number of occurances of cutoff value for each base rate and calculates upper and lower boundaries on the basis of values provided.
+## `plot_boundary` function plots the number of occurances of cutoff value for each base rate and calculates upper and lower boundaries on the basis of values provided.
 
 
 ```python
